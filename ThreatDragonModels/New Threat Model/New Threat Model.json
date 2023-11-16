@@ -942,59 +942,6 @@
               "isBidirectional": false,
               "reasonOutOfScope": "",
               "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": [
-                {
-                  "id": "d676b95a-286e-4530-b338-19d282626c3f",
-                  "title": "Man in the middle attack",
-                  "status": "Mitigated",
-                  "severity": "Medium",
-                  "type": "Information disclosure",
-                  "description": "An attacker could intercept the DB queries in transit and obtain sensitive information, such as DB credentials, query parameters or query results (is unlikely since the data flow is over a private network).",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 26,
-                  "score": ""
-                }
-              ]
-            },
-            "id": "d0f8bd45-391d-48b8-b2aa-2b22ad3161f0",
-            "source": {
-              "cell": "7fc61cfb-92e2-433e-be17-b83f68835c05"
-            },
-            "target": {
-              "cell": "885bc662-fcfc-44e9-a90f-bf91f1625ed8"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isBidirectional": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
               "isEncrypted": true,
               "isPublicNetwork": true,
               "hasOpenThreats": false,
@@ -1090,6 +1037,59 @@
                 "y": 270
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": [
+                {
+                  "id": "d676b95a-286e-4530-b338-19d282626c3f",
+                  "title": "Man in the middle attack",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "An attacker could intercept the DB queries in transit and obtain sensitive information, such as DB credentials, query parameters or query results (is unlikely since the data flow is over a private network).",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 26,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "d0f8bd45-391d-48b8-b2aa-2b22ad3161f0",
+            "source": {
+              "cell": "7fc61cfb-92e2-433e-be17-b83f68835c05"
+            },
+            "target": {
+              "cell": "885bc662-fcfc-44e9-a90f-bf91f1625ed8"
+            }
           },
           {
             "position": {
@@ -1440,7 +1440,7 @@
           },
           {
             "position": {
-              "x": 320,
+              "x": 310,
               "y": 10
             },
             "size": {
